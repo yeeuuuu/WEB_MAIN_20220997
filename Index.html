@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <!--주석 처리 단축키  -->>
+  <!--주석 처리 단축키 ctrl + / -->>
+
 
   <html>
     <head>
       <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>LOL 메인화면</title>
-      <meta name="“author”" content="“학번”" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+      <meta name="“yangyeeun”" content="“20220997”" /> 
       <meta name="“keywords”" content="“computer”" />
       <base href="http://127.0.0.1:5500" />
     </head>
     <body style="background-color: black">
-      <div style="display: flex; justify-content: center">
-        <img src="로고 이미지 이름" width="200" height="60" />
-        <h3
-          style="
+      <!-- <div style="display: flex; justify-content: center"> 
+        <img src="Images/RG_WHITE.png" width="200" height="60" />
+        <h3 style="
             font-size: 24px;
             font-weight: bold;
             font-style: italic;
             color: white;
             font-family: '굴림';
-          "
-        >
-          <a href="index.html" target="_top">게임 정보</a> 기본정보 챔피언
-          패치노트 새소식
+          " >
+          <a href="index.html" target="_self">게임 정보</a> 새소식 패치노트
+          이벤트 고객지원
         </h3>
-      </div>
-      <hr />
+      </div>-->
+      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
+      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #FFFFFF;" data-bs-theme="color: #000000"> -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/RG_WHITE.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top">
+          </a>
+          <a class="navbar-brand" href="index.html">메인페이지</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">게임정보</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">새소식</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">패치노트</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">이벤트</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  고객지원
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">게임 다운로드</a></li>
+                  <li><a class="dropdown-item" href="index.html">롤 커뮤니티</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="https://github.com/yeeuuuu/WEB_MAIN_20220997"target="_blank">깃 허브 페이지</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <hr>
       <div style="display: flex; justify-content: center">
-        <a href="index.html" target="_top"
-          ><img src="메인이미지 이름" width="1200" height="768"
+        <a href="index.html" target="_self"
+          ><img src="Images/main.jpg" width="1200" height="768"
         /></a>
       </div>
-      <hr />
+      <div style="display: flex; justify-content: center;">
+        <table border="1" >
+          <caption>인기캐릭터</caption>
+          <thead>
+            <style>
+              table {
+              font-size: 20pt;
+              color: white;
+              }
+              </style>
+          <tbody>
+            <tr bgcolor="red">
+              <td>사이온</td>
+              <td>아리</td>
+              <td>가렌</td>
+              <td>가렌2</td>
+              <td>가렌3</td>
+            </tr>
+            </tr>
+            <tr bgcolor="grey">
+              <td colspan="5"><a href="https://www.leagueoflegends.com/ko-kr/" target="_blank">웹 사이트 방문하기<a></td>
+            </tr>
+            <tr>
+              <td bgcolor="blue"><b>카직스</b></td>
+              <td colspan="2"><img src="Images/Lucian.webp" width="100" height="100" >루시안1, 2</td>
+              <td colspan="2"><img src="Images/Vi.webp" width="100" height="100">바이1, 2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr>
       <div style="display: flex; justify-content: center">
         <h3
           style="
@@ -46,6 +124,7 @@
           라이엇 게임 회사 정보 자바웹
         </h3>
       </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
     </body>
   </html>
 </html>
