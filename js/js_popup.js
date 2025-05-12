@@ -7,7 +7,7 @@ function popup() {
   );
 }
 */
-function pop_up() {
+function popup() {
   var cookieCheck = getCookie("popupYN");
   if (cookieCheck != "N") {
     window.open(
@@ -59,10 +59,6 @@ function over(obj) {
   */
 const over = (obj) => {
   obj.src = "../Images/RG_RED.png";
-};
-const search_message = () => {
-  const c = "검색을 수행합니다";
-  alert(c);
 };
 function out(obj) {
   obj.src = "../Images/RG_WHITE.png";

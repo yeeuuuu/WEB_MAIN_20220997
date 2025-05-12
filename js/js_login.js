@@ -9,7 +9,7 @@ function init() {
   }
   session_check(); // 세션 유무 검사
 }
-
+/*
 const check_xss = (input) => {
   // DOMPurify 라이브러리 로드 (CDN 사용)
   const DOMPurify = window.DOMPurify;
@@ -24,7 +24,7 @@ const check_xss = (input) => {
   // Sanitized된 값 반환
   return sanitizedInput;
 };
-
+*/
 function setCookie(name, value, expiredays) {
   var date = new Date();
   date.setDate(date.getDate() + expiredays);
@@ -57,6 +57,7 @@ const check_input = () => {
   const emailInput = document.getElementById("typeEmailX");
   const passwordInput = document.getElementById("typePasswordX");
 
+  /*
   //여기 아래로 4줄 const 9주차 위치 확실하지 않음
   const sanitizedPassword = check_xss(passwordInput);
   // check_xss 함수로 비밀번호 Sanitize
@@ -64,7 +65,7 @@ const check_input = () => {
   // check_xss 함수로 비밀번호 Sanitize
   // 전역 변수 추가, 맨 위 위치
   const idsave_check = document.getElementById("idSaveCheck");
-
+*/
   const c = "아이디, 패스워드를 체크합니다";
   alert(c);
 
