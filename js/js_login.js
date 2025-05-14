@@ -9,7 +9,15 @@ function init() {
   }
   session_check(); // 세션 유무 검사
 }
-/*
+
+function init_logined() {
+  if (sessionStorage) {
+    decrypt_text(); // 복호화 함수
+  } else {
+    alert("세션 스토리지 지원 x");
+  }
+}
+
 const check_xss = (input) => {
   // DOMPurify 라이브러리 로드 (CDN 사용)
   const DOMPurify = window.DOMPurify;
@@ -24,7 +32,7 @@ const check_xss = (input) => {
   // Sanitized된 값 반환
   return sanitizedInput;
 };
-*/
+
 function setCookie(name, value, expiredays) {
   var date = new Date();
   date.setDate(date.getDate() + expiredays);
@@ -63,14 +71,21 @@ const check_input = () => {
   // check_xss 함수로 비밀번호 Sanitize
   const sanitizedEmail = check_xss(emailValue);
   // check_xss 함수로 비밀번호 Sanitize
+*/
   // 전역 변수 추가, 맨 위 위치
   const idsave_check = document.getElementById("idSaveCheck");
-*/
+
   const c = "아이디, 패스워드를 체크합니다";
   alert(c);
 
   const emailValue = emailInput.value.trim();
   const passwordValue = passwordInput.value.trim();
+
+  const payload = {
+    id: emailValue,
+    exp: Math.floor(Date.now() / 1000) + 3600, // 1시간 (3600초)
+  };
+  const jwtToken = generateJWT(payload);
 
   if (emailValue === "") {
     alert("이메일을 입력하세요.");
@@ -125,6 +140,7 @@ const check_input = () => {
   console.log("비밀번호:", passwordValue);
 
   session_set(); // 세션 생성
+  localStorage.setItem("jwt_token", jwtToken);
   loginForm.submit();
 };
 document.getElementById("login_btn").addEventListener("click", check_input);

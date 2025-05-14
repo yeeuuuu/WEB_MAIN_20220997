@@ -13,12 +13,19 @@
       <meta name="“yangyeeun”" content="“20220997”" /> 
       <meta name="“keywords”" content="“computer”" />
       <base href="http://127.0.0.1:5500" />
-      <script type="text/javascript" defer src="js/Basic_js_test.js"></script>
       <script type="text/javascript" defer src="js/js_search.js"></script>
-      <script type="text/javascript" defer src="js/js_popup.js"></script>
-      <script type="text/javascript" defer src="js/js_data_type.js"></script>
+      <script type="text/javascript" defer src="../js/js_login.js"></script>
+      <script type="text/javascript" defer src="../js/js_session.js"></script>
+      <script type="text/javascript" defer src="../js/js_crypto.js"></script>
+      <script type="text/javascript" defer src="../js/js_jwt_token.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"
+        integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
     </head>
-    <body style="background-color: black" onload="popup();">
+    <body style="background-color: blue;" onload="checkAuth(); init_logined();">
       <!-- <div style="display: flex; justify-content: center"> 
         <img src="Images/RG_WHITE.png" width="200" height="60" />
         <h3 style="
