@@ -1,3 +1,7 @@
+import { session_set, session_get, session_check } from "./js_session.js";
+import { encrypt_text, decrypt_text } from "./js_crypto.js";
+import { generateJWT, checkAuth } from "./js_jwt_token.js";
+
 function init() {
   // 로그인 폼에 쿠키에서 가져온 아이디 입력
   const emailInput = document.getElementById("typeEmailX");
@@ -9,6 +13,12 @@ function init() {
   }
   session_check(); // 세션 유무 검사
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  init();
+  checkAuth();
+  init_logined();
+});
 
 function init_logined() {
   if (sessionStorage) {
@@ -116,6 +126,8 @@ const check_input = () => {
     alert("패스워드는 대소문자를 1개 이상 포함해야 합니다.");
     return false;
   }
+
+  /*
   if (!sanitizedEmail) {
     // Sanitize된 비밀번호 사용
     return false;
@@ -124,6 +136,7 @@ const check_input = () => {
     // Sanitize된 비밀번호 사용
     return false;
   }
+  */
 
   // 검사 마무리 단계 쿠키 저장, 최하단 submit 이전
   if (idsave_check.checked == true) {
