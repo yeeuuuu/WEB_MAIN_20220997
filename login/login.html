@@ -6,7 +6,7 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>LOL 메인화면</title>
+      <title>SKU 로그인 화면</title>
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -28,16 +28,16 @@
       <meta name="“yangyeeun”" content="“20220997”" />
       <meta name="“keywords”" content="“computer”" />
       <base href="http://127.0.0.1:5500" />
-      <script type="module" defer src="../js/js_login.js"></script>
-      <!-- <script type="text/javascript" defer src="../js/js_session.js"></script>
-      <script type="text/javascript" defer src="../js/js_crypto.js"></script>
-      <script type="text/javascript" defer src="../js/js_jwt_token.js"></script> -->
       <script
         src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"
         integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ=="
         crossorigin="anonymous"
         referrerpolicy="no-referrer"
       ></script>
+      <script type="module" defer src="../js/js_login.js"></script>
+      <!-- <script type="text/javascript" defer src="../js/js_session.js"></script>
+      <script type="text/javascript" defer src="../js/js_crypto.js"></script>
+      <script type="text/javascript" defer src="../js/js_jwt_token.js"></script> -->
       <link rel="stylesheet" href="../login/login.css" />
     </head>
     <body class="text-center">
@@ -54,7 +54,7 @@
                     <p class="text-white-50 mb-5">
                       이메일과 비밀번호를 입력해주세요.
                     </p>
-
+                    <div id="login_status" style="margin-top:10px; color: red;"></div>
                     <form
                       method="get"
                       action="/login/index_login.html"

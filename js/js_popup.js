@@ -18,14 +18,6 @@ function popup() {
   }
 }
 
-/* 
-  function 은 함수라는 뜻.
-  popup 이라는 함수를 호출하면 윈도우를 오픈한다. 
-
-  파일 경로와 문자열, 가로세로 사이즈, 공백이 나와있음.
-  
-  */
-
 function show_clock() {
   let currentDate = new Date(); // 현재 시스템 날짜 객체 생성
   let divClock = document.getElementById("divClock");
@@ -58,23 +50,18 @@ function over(obj) {
 }
   */
 const over = (obj) => {
-  obj.src = "../Images/RG_RED.png";
+  obj.src = "../Images/sk_mark.jpg";
 };
 function out(obj) {
-  obj.src = "../Images/RG_WHITE.png";
+  obj.src = "../Images/sk_mark2.png";
 }
 
 function setCookie(name, value, expiredays) {
   var date = new Date();
   date.setDate(date.getDate() + expiredays);
-  document.cookie =
-    escape(name) +
-    "=" +
-    escape(value) +
-    "; expires=" +
-    date.toUTCString() +
-    "; path=/";
+  document.cookie = escape(name) + "=" + escape(value) + "; expires=" + date.toUTCString() + "; path=/" + ";SameSite=None; Secure";
 }
+
 function getCookie(name) {
   var cookie = document.cookie;
   console.log("쿠키를 요청합니다.");
@@ -89,3 +76,11 @@ function getCookie(name) {
   }
   return;
 }
+
+ function closePopup() {
+ if (document.getElementById('check_popup').value) {
+ setCookie("popupYN", "N", 1);
+ console.log("쿠키를 설정합니다.");
+ self.close();
+ }
+ }

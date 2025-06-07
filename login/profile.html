@@ -6,7 +6,7 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <title>LOL 메인화면</title>
+      <title>SKU 프로필화면</title>
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -19,148 +19,66 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"
       ></script>
-      <meta name="“yangyeeun”" content="“20220997”" />
-      <meta name="“keywords”" content="“computer”" />
+      <meta name="yangyeeun" content="20220997" /> 
+      <meta name="keywords" content="computer" />
       <base href="http://127.0.0.1:5500" />
       <link rel="stylesheet" href="../login/profile.css" />
-      <script type="text/javascript" defer src="../js/js_search.js"></script>
-      <script type="text/javascript" defer src="../js/js_login.js"></script>
-      <script type="text/javascript" defer src="../js/js_map.js"></script>
+      <script type="module" defer src="../js/js_search.js"></script>
+      <script type="module" defer src="../js/js_login.js"></script>
+      <script type="module" defer src="../js/js_logout.js"></script>
+      <script type="module" defer src="../js/js_map.js"></script>
       <script
         type="text/javascript"
         src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f0aff40d1334d39f4da348b3d3b8b06b&libraries=services,clusterer,drawing"
       ></script>
     </head>
-    <body style="background-color: black">
-      <!-- <div style="display: flex; justify-content: center"> 
-          <img src="Images/RG_WHITE.png" width="200" height="60" />
-          <h3 style="
-              font-size: 24px;
-              font-weight: bold;
-              font-style: italic;
-              color: white;
-              font-family: '굴림';
-            " >
-            <a href="index.html" target="_self">게임 정보</a> 새소식 패치노트
-            이벤트 고객지원
-          </h3>
-        </div>-->
-      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
-      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #FFFFFF;" data-bs-theme="color: #000000"> -->
-      <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #000000; color: #FFFFFF;" > -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <body style="background-color: black;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black" >
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img
-              src="Images/RG_WHITE.png"
-              alt="Logo"
-              width="200"
-              height="60"
-              class="d-inline-block align-text-top"
-              onmouseover="over(this)"
-              onmouseout="out(this)"
-            />
+          <a class="navbar-brand" href="../login/index_login.html">
+            <img src="Images/sk_mark2.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top" onmouseover="over(this)" onmouseout="out(this)">
           </a>
-          <a class="navbar-brand" href="index.html">Navbar</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a class="navbar-brand" href="../login/index_login.html">SKU</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >홈페이지</a
-                >
-                <!-- active 클래스는 현재 상태를 나타내며, '활성' 상태로 보익 할 수 있다고 함(확실X) -->
-                <!-- aria-current="page" 웹 접근성 기능으로, 현재 페이지임을 보조기술에 알리는 역할이라고 함(확실X) -->
+                <a class="nav-link active" aria-current="page" href="../login/index_login.html">성결소개</a> 
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">게임소개</a>
+                <a class="nav-link" href="../login/index_login.html">대학/대학원</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">다운로드</a>
+                <a class="nav-link" href="../login/index_login.html">입학안내</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">새소식</a>
+                <a class="nav-link" href="../login/index_login.html">대학생활</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">이벤트</a>
+                <a class="nav-link active" href="login/profile.html" target='_blank'>프로필</a>
               </li>
               <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="index.html"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  고객지원
+                <a class="nav-link dropdown-toggle" href="../login/index_login.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  미소광장
                 </a>
                 <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="index.html">고객센터</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="index.html">롤 커뮤니티</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="https://github.com/yeeuuuu/WEB_MAIN_20220997"target="_blank">깃 허브 페이지</a></li>
+                  <li><hr class="dropdown-divider"></li>
                   <!-- 드롭다운 메뉴에 라인 삽입 -->
-                  <li>
-                    <a
-                      class="dropdown-item"
-                      href="https://github.com/yeeuuuu/WEB_MAIN_20220997"
-                      target="_blank"
-                      >깃 허브 페이지</a
-                    >
-                  </li>
+                  <li><a class="dropdown-item" href="../login/index_login.html">학과소개</a></li>
+                  <li><a class="dropdown-item" href="../login/index_login.html">전공안내</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
             </ul>
-            <a class="navbar-brand">게임정보</a>
-            <!-- <form class="d-flex" role="search"> 
-                <input class="form-control me-2" type="search" placeholder="키워드 입력" aria-label="Search">
-                <button class="btn btn-outline-success"id="search_btn" type="submit">검색하기</button>
-              </form>-->
-            <form
-              class="d-flex"
-              role="search"
-              onsubmit="return googleSearch();"
-            >
-              <input
-                class="form-control me-2"
-                id="search_input"
-                name="q"
-                type="search"
-                placeholder="키워드 입력"
-                aria-label="Search"
-              />
-              <button
-                class="btn btn-outline-success"
-                id="search_button_msg"
-                type="submit"
-              >
-                검색하기
-              </button>
+            <form class="d-flex" role="search" onsubmit="return googleSearch();">
+              <input class="form-control me-2" id="search_input" name="q" type="search" placeholder="키워드 입력" aria-label="Search">
+              <button class="btn btn-outline-success" id="search_button_msg" type="submit">검색하기</button>
             </form>
           </div>
         </div>
-        <a
-          href="login/login.html"
-          class="btn btn-outline-success"
-          id="login_btn"
-          >로그인 하기</a
-        >
+        <a href="../login/logout.html" class="btn btn-outline-success">로그아웃 하기</a>
       </nav>
       <hr />
       <section style="background-color: #eee">
@@ -187,7 +105,7 @@
               <div class="card mb-4">
                 <div class="card-body text-center">
                   <img
-                    src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp"
+                    src="../Images/icon.png"
                     alt="avatar"
                     class="rounded-circle img-fluid"
                     style="width: 150px"
@@ -204,7 +122,7 @@
                       data-mdb-ripple-init
                       class="btn btn-primary"
                     >
-                      Follow
+                      팔로우하기
                     </button>
                     <button
                       type="button"
@@ -212,7 +130,7 @@
                       data-mdb-ripple-init
                       class="btn btn-outline-primary ms-1"
                     >
-                      Message
+                      메시지
                     </button>
                   </div>
                 </div>
@@ -224,13 +142,13 @@
                       class="list-group-item d-flex justify-content-between align-items-center p-3"
                     >
                       <i class="fas fa-globe fa-lg text-warning"></i>
-                      <p class="mb-0">https://mdbootstrap.com</p>
+                      <p class="mb-0">https://github.com/yeeuuuu/WEB_MAIN_20220997</p>
                     </li>
                     <li
                       class="list-group-item d-flex justify-content-between align-items-center p-3"
                     >
                       <i class="fab fa-github fa-lg text-body"></i>
-                      <p class="mb-0">mdbootstrap</p>
+                      <p class="mb-0">yeeuuuu</p>
                     </li>
                     <li
                       class="list-group-item d-flex justify-content-between align-items-center p-3"
@@ -239,7 +157,7 @@
                         class="fab fa-twitter fa-lg"
                         style="color: #55acee"
                       ></i>
-                      <p class="mb-0">@mdbootstrap</p>
+                      <p class="mb-0">@yeeuuuu</p>
                     </li>
                     <li
                       class="list-group-item d-flex justify-content-between align-items-center p-3"
@@ -248,7 +166,7 @@
                         class="fab fa-instagram fa-lg"
                         style="color: #ac2bac"
                       ></i>
-                      <p class="mb-0">mdbootstrap</p>
+                      <p class="mb-0">yeeuuuu</p>
                     </li>
                     <li
                       class="list-group-item d-flex justify-content-between align-items-center p-3"
@@ -257,7 +175,7 @@
                         class="fab fa-facebook-f fa-lg"
                         style="color: #3b5998"
                       ></i>
-                      <p class="mb-0">mdbootstrap</p>
+                      <p class="mb-0">yeeuuuu</p>
                     </li>
                   </ul>
                 </div>
@@ -280,7 +198,7 @@
                       <p class="mb-0">Email</p>
                     </div>
                     <div class="col-sm-9">
-                      <p class="text-muted mb-0">example@example.com</p>
+                      <p class="text-muted mb-0">ye5055@sungkyul.ac.kr</p>
                     </div>
                   </div>
                   <hr />
@@ -308,7 +226,7 @@
                     </div>
                     <div class="col-sm-9">
                       <p class="text-muted mb-0">
-                        성결대학교, 미디어소프트웨어 학과
+                        경기 안양시 만안구 안양동, 성결대학교
                       </p>
                     </div>
                   </div>
@@ -322,66 +240,66 @@
                         <span class="text-primary font-italic me-1"
                           >assigment</span
                         >
-                        Project Status
+                        프로그래밍 언어
                       </p>
-                      <p class="mb-1" style="font-size: 0.77rem">Web Design</p>
+                      <p class="mb-1" style="font-size: 0.77rem">JAVA</p>
                       <div class="progress rounded" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 80%"
+                          style="width: 89%"
                           aria-valuenow="80"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
                       </div>
                       <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                        Website Markup
+                        파이썬
                       </p>
                       <div class="progress rounded" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 72%"
+                          style="width: 65%"
                           aria-valuenow="72"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
                       </div>
                       <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                        One Page
+                        C, C++
                       </p>
                       <div class="progress rounded" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 89%"
+                          style="width: 80%"
                           aria-valuenow="89"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
                       </div>
                       <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                        Mobile Template
+                        PHP
                       </p>
                       <div class="progress rounded" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 55%"
+                          style="width: 40%"
                           aria-valuenow="55"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
                       </div>
                       <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                        Backend API
+                        SPRING BOOT
                       </p>
                       <div class="progress rounded mb-2" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 66%"
+                          style="width: 50%"
                           aria-valuenow="66"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -397,66 +315,66 @@
                         <span class="text-primary font-italic me-1"
                           >assigment</span
                         >
-                        Project Status
+                        웹개발
                       </p>
-                      <p class="mb-1" style="font-size: 0.77rem">Web Design</p>
+                      <p class="mb-1" style="font-size: 0.77rem">FRONTEND</p>
                       <div class="progress rounded" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
                           style="width: 80%"
-                          aria-valuenow="80"
+                          aria-valuenow="85"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
                       </div>
                       <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                        Website Markup
+                        BACKEND
                       </p>
                       <div class="progress rounded" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 72%"
+                          style="width: 65%"
                           aria-valuenow="72"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
                       </div>
                       <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                        One Page
+                        GAME DEVELOPER
                       </p>
                       <div class="progress rounded" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 89%"
+                          style="width: 75%"
                           aria-valuenow="89"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
                       </div>
                       <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                        Mobile Template
+                        UX DESIGN
                       </p>
                       <div class="progress rounded" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 55%"
+                          style="width: 70%"
                           aria-valuenow="55"
                           aria-valuemin="0"
                           aria-valuemax="100"
                         ></div>
                       </div>
                       <p class="mt-4 mb-1" style="font-size: 0.77rem">
-                        Backend API
+                        ANDROID
                       </p>
                       <div class="progress rounded mb-2" style="height: 5px">
                         <div
                           class="progress-bar"
                           role="progressbar"
-                          style="width: 66%"
+                          style="width: 55%"
                           aria-valuenow="66"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -478,7 +396,9 @@
                       overflow: hidden;
                     "
                   ></div>
-
+                  <div class="hAddr">
+                    <span class="title">지도중심기준 행정동 주소정보</span>
+                    <span id="centerAddr"></span></div>
                   <div id="menu_wrap" class="bg_white">
                     <div class="option">
                       <div>
@@ -498,6 +418,7 @@
                     <ul id="placesList"></ul>
                     <div id="pagination"></div>
                   </div>
+
                 </div>
                 <p><em>지도를 클릭해주세요!</em></p>
                 <div id="clickLatlng"></div>

@@ -7,31 +7,21 @@
     <head>
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>LOL 메인화면</title>
+      <title>SKU 메인화면</title>
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
       <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-      <meta name="“yangyeeun”" content="“20220997”" /> 
-      <meta name="“keywords”" content="“computer”" />
+      <meta name="yangyeeun" content="20220997" /> 
+      <meta name="keywords" content="computer" />
       <base href="http://127.0.0.1:5500" />
+      <script type="text/javascript" defer src="js/js_popup.js"></script>
       <script type="text/javascript" defer src="js/Basic_js_test.js"></script>
       <script type="text/javascript" defer src="js/js_search.js"></script>
-      <script type="text/javascript" defer src="js/js_popup.js"></script>
       <script type="text/javascript" defer src="js/js_data_type.js"></script>
       <script type="text/javascript" defer src="js/js_login.js"></script>
     </head>
     <body style="background-color: black" onload="popup();">
       <!-- <div style="display: flex; justify-content: center"> 
         <img src="Images/RG_WHITE.png" width="200" height="60" />
-        <h3 style="
-            font-size: 24px;
-            font-weight: bold;
-            font-style: italic;
-            color: white;
-            font-family: '굴림';
-          " >
-          <a href="index.html" target="_self">게임 정보</a> 새소식 패치노트
-          이벤트 고객지원
-        </h3>
       </div>-->
       <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
       <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #FFFFFF;" data-bs-theme="color: #000000"> -->
@@ -39,48 +29,45 @@
       <nav class="navbar navbar-expand-lg navbar-dark bg-black" >
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="Images/RG_WHITE.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top" onmouseover="over(this)" onmouseout="out(this)">
+            <img src="Images/sk_mark2.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top" onmouseover="over(this)" onmouseout="out(this)">
           </a>
-          <a class="navbar-brand" href="index.html">Navbar</a>
+          <a class="navbar-brand" href="index.html">SKU</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">홈페이지</a> 
-                <!-- active 클래스는 현재 상태를 나타내며, '활성' 상태로 보익 할 수 있다고 함(확실X) -->
-                <!-- aria-current="page" 웹 접근성 기능으로, 현재 페이지임을 보조기술에 알리는 역할이라고 함(확실X) -->
+                <a class="nav-link active" aria-current="page" href="index.html">성결소개</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">게임소개</a>
+                <a class="nav-link" href="index.html">대학/대학원</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">다운로드</a>
+                <a class="nav-link" href="index.html">입학안내</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">새소식</a>
+                <a class="nav-link" href="index.html">대학생활</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="index.html">이벤트</a>
+                <a class="nav-link" href="index.html">서비스</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  고객지원
+                  미소광장
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="index.html">고객센터</a></li>
-                  <li><a class="dropdown-item" href="index.html">롤 커뮤니티</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/yeeuuuu/WEB_MAIN_20220997"target="_blank">깃 허브 페이지</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <!-- 드롭다운 메뉴에 라인 삽입 -->
-                  <li><a class="dropdown-item" href="https://github.com/yeeuuuu/WEB_MAIN_20220997"target="_blank">깃 허브 페이지</a></li>
+                  <li><a class="dropdown-item" href="index.html">학과소개</a></li>
+                  <li><a class="dropdown-item" href="index.html">전공안내</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <!-- <li class="nav-item">
                 <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
+              </li> -->
             </ul>
-            <a class="navbar-brand">게임정보</a>
             <!-- <form class="d-flex" role="search"> 
               <input class="form-control me-2" type="search" placeholder="키워드 입력" aria-label="Search">
               <button class="btn btn-outline-success"id="search_btn" type="submit">검색하기</button>
@@ -96,45 +83,35 @@
       <hr>
       <div style="display: flex; justify-content: center">
         <a href="index.html" target="_self"
-          ><img src="Images/main.jpg" class="img-fluid" width="1200" height="768"
+          ><img src="Images/skumain.png" class="img-fluid" width="1500" height="900"
         /></a>
       </div>
       <div style="display: flex; justify-content: center;">
         <table  class="table table-bordered table-warning" border="1" >
-          <caption>인기캐릭터</caption>
           <thead>
-            <!-- <style> 
-              table {
-              font-size: 20pt;
-              color: white;
-              }
-              </style>-->
             <tr class="table-success">
-              <th class="table-info">#</th>
-              <th>1</th>
-              <th class="table-info">2</th>
-              <th class="table-info">3</th>
-              <th>4</th>
-              <th>5</th>
+              <th class="table-info"></th>
+              <th class="table-danger"><img src="Images/table3.png" width="40" height="40"><a href="https://www.sungkyul.ac.kr/skukr/index.do" target="_blank">학사</a></th>
+              <th class="table-info"><img src="Images/table1.png" width="40" height="40">식단</th>
+              <th class="table-info"><img src="Images/table2.png" width="40" height="40">입학</th>
+              <th colspan="2"><img src="Images/table4.png" width="40" height="40">학사일정</th>
+              <!-- <th>5</th> -->
           <tbody>
-            <tr bgcolor="red">
+            <tr>
               <th>1</th>
-              <td>사이온</td>
-              <td>아리</td>
-              <td>가렌</td>
-              <td>가렌2</td>
-              <td>가렌3</td>
+              <td colspan="3" style="background-color: white">2025학년도 1학기 군 복무경험 학점인정제 안내</td>
+              <td colspan="2">06.04 기말고사</td>
             </tr>
-            </tr>
-            <tr class="table-danger" bgcolor="grey">
-              <th></th>
-              <td colspan="5"><a href="https://www.leagueoflegends.com/ko-kr/" target="_blank">웹 사이트 방문하기<a></td>
             </tr>
             <tr class="table-info">
-              <th class="table-success">2</th>
-              <td bgcolor="blue"><b>카직스</b></td>
-              <td class="table-success" colspan="2"><img src="Images/Lucian.webp" width="100" height="100" >루시안1, 2</td>
-              <td colspan="2"><img src="Images/Vi.webp" width="100" height="100">바이1, 2</td>
+              <th>2</th>
+              <td colspan="3" style="background-color: white">[교직지원센터] 2025학년도 교육실습(학교현장실습) 총평가회 시행 안내<a></td>
+              <td colspan="2"><a>06.07 기말보고서</td>
+            </tr>
+            <tr class="table-info">
+              <th class="table-success">3</th>
+              <td colspan="3" style="background-color: white">[교직지원센터] 2025학년도 교육실습(학교현장실습) 총평가회 시행 안내</b></td>
+              <td colspan="2" class="table-success">06.11 점수확인</td>
             </tr>
           </tbody>
         </table>
@@ -150,7 +127,7 @@
             font-family: '굴림';
           "
         >
-          라이엇 게임 회사 자바웹 양예은 20220997
+          성결대학교 미디어소프트웨어학과 자바웹 양예은 20220997
         </h3>
       </div>
     </body>

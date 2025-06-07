@@ -34,7 +34,7 @@ export function session_set() {
     id: id.value,
     otp: random,
   };
-  // 다음 페이지 계속 작성하기
+
   if (sessionStorage) {
     const objString = JSON.stringify(obj); // 객체 -> JSON 문자열 변환
     let en_text = encrypt_text(objString); // 암호화
@@ -46,7 +46,7 @@ export function session_set() {
   }
 }
 
-export function session_set2() {
+export function session_set2(obj) {
   //세션 저장(객체)
   let id = document.querySelector("#typeEmailX");
   let password = document.querySelector("#typePasswordX");
@@ -79,10 +79,12 @@ export function session_check() {
   }
 }
 
-function session_del() {
+export function session_del() {
   //세션 삭제
   if (sessionStorage) {
-    sessionStorage.removeItem("Session_Storage_test");
+    sessionStorage.removeItem("Session_Storage_id");
+    sessionStorage.removeItem("Session_Storage_object");
+    sessionStorage.removeItem("Session_Storage_pass");
     alert("로그아웃 버튼 클릭 확인 : 세션 스토리지를 삭제합니다.");
   } else {
     alert("세션 스토리지 지원 x");

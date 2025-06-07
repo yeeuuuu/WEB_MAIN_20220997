@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <!--주석 처리 단축키 ctrl + / -->
+
+  
+  <html>
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>SKU 로그아웃화면</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+      <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+      <meta name="yangyeeun" content="20220997" /> 
+      <meta name="keywords" content="computer" />
+      <base href="http://127.0.0.1:5500" />
+      <script type="module" defer src="../js/js_login.js"></script>
+      <script type="module" defer src="../js/js_logout.js"></script>
+      <script type="module" defer src="../js/js_session.js"></script>
+      <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"
+        integrity="sha512-a+SUDuwNzXDvz4XrIcXHuCf089/iJAoN4lmrXJg18XnduKK6YlDHNRalv4yd1N40OKI80tFidF+rqTFKGPoWFQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
+    </head>
+    <body style="background-color: black;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black" >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../login/index_login.html">
+            <img src="Images/sk_mark2.png" alt="Logo" width="200" height="60" class="d-inline-block align-text-top" onmouseover="over(this)" onmouseout="out(this)">
+          </a>
+        </div>
+      </nav>
+      <hr>
+      <div style="
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center; 
+        min-height: 70dvh;
+        gap: 30px;
+        ">
+        <h3 style="
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+          " > 로그아웃 메인화면 </h3>
+          <button class="btn btn-outline-success" id="logout_btn">로그아웃 하기</button>
+        </div>
+    </body>
+    <footer>
+        <hr>
+        <div style="display: flex; justify-content: center">
+            <h3 style="
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+            color: white;
+            font-family: '굴림';
+          "
+        >
+          성결대학교 미디어소프트웨어학과 자바웹 양예은 20220997
+            </h3>
+        </div>
+    </footer>
+  </html>
+</html>

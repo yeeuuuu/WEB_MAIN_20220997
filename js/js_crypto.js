@@ -1,4 +1,4 @@
-import { session_set, session_get, session_check } from "./js_session.js";
+import { session_set, session_get, session_check, session_del } from "./js_session.js";
 
 function encodeByAES256(key, data) {
   //
